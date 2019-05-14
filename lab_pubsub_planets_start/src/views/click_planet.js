@@ -10,9 +10,9 @@ ClickPlanet.prototype.bindEvents = function(){
     this.assignPlanetByName(nameOfPlanet);
 
   this.anchor.addEventListener('click', (event) => {
-    console.log(event.target.id)
+
     const chosenPlanet = event.target.id
-    PubSub.publish('ClickPlanet:select-planet', chosenPlanet);
+    PubSub.publish('ClickPlanet:click-planet', chosenPlanet);
   })
 
   })
