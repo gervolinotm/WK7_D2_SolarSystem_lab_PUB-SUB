@@ -5,8 +5,8 @@ const SolarSystem = require('./models/solar_system.js');
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const planetSelected = document.querySelector('nav.planets-menu');
-  const clickedPlanet = new ClickPlanet(planetSelected);
+  const selectAnchor = document.querySelector('nav.planets-menu');
+  const clickedPlanet = new ClickPlanet(selectAnchor);
   clickedPlanet.bindEvents();
 
   // const infoSection = document.querySelector('section.planet-details');
