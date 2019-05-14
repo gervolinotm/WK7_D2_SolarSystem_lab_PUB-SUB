@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const clickedPlanet = new ClickPlanet(planetSelected);
   clickedPlanet.bindEvents();
 
-  const infoSection = document.querySelector('section.planet-details');
-  const displayPlanetInfo = new PlanetInfo(infoSection);
-  displayPlanetInfo.bindEvents();
+  // const infoSection = document.querySelector('section.planet-details');
+  // const displayPlanetInfo = new PlanetInfo(infoSection);
+  // displayPlanetInfo.bindEvents();
 
   const planetsDataModel = new SolarSystem(planetsData);
   planetsDataModel.bindEvents();

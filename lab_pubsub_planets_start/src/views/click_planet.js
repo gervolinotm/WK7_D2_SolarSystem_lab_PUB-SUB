@@ -11,8 +11,11 @@ ClickPlanet.prototype.bindEvents = function(){
   })
 }
 
-ClickPlanet.prototype.assignPlanetByName = function(name){
-
+ClickPlanet.prototype.assignPlanetByName = function(arrayOfPlanets){
+  arrayOfPlanets.forEach((planet) => {
+    let planetName = planet.name
+    console.log(planetName)
+  })
 }
 
 
